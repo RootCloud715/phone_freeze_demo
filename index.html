@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Security Awareness Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="freeze-screen">
+        <h1>SECURITY ALERT</h1>
+        <p>Your device is being checked.</p>
+        <p id="timer">10</p>
+        <p>Please wait...</p>
+    </div>
+
+    <div id="reveal-screen" hidden>
+        <h1>SIMULATION COMPLETE</h1>
+        <p>Your phone was never locked.</p>
+        <p>
+            This demonstration shows how frightening
+            a fake security warning can look.
+        </p>
+        <button onclick="location.reload()">
+            Run Again
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
